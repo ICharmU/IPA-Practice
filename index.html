@@ -1,0 +1,165 @@
+<!-- 
+TODO 
+
+Add voiced vs voiceless tag to each button
+Find a way to color out "impossible" human noises
+Change chart to include dental, alveolar and post alveolar sounds that can be made in of these parts
+
+Change buttons to anchors that play the sound when clicked.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPA Practice</title>
+  <style>
+    .location {
+      colspan: 2
+    }
+  </style>
+</head>
+<body>
+  IPA Chart
+  <table>
+    <tr>
+      <th></th>
+      <th colspan="2">Bilabial</th>
+      <th colspan="2">Labiodental</th>
+      <th colspan="2">Dental</th>
+      <th colspan="2">Alveolar</th>
+      <th colspan="2">Post Alveolar</th>
+      <th colspan="2">Retroflex</th>
+      <th colspan="2">Palatal</th>
+      <th colspan="2">Velar</th>
+      <th colspan="2">Uvular</th>
+      <th colspan="2">Pharyngeal</th>
+      <th colspan="2">Glottal</th>
+    </tr>
+    <tr class="plosive">
+      <th>Plosive</th>
+      <td class="bilabial"><button>p</button></td>
+      <td class="bilabial"><button>d</button></td>
+      <td class="labiodental"><button>NA</button></td>
+      <td class="labiodental"><button>NA</button></td>
+      <td class="dental"><button>NA</button></td>
+      <td class="dental"><button>NA</button></td>
+      <td class="alveolar"><button>t</button></td>
+      <td class="alveolar"><button>t</button></td>
+      <td class="postalveolar"><button>NA</button></td>
+      <td class="postalveolar"><button>NA</button></td>
+      <td class="retroflex"><button>ʈ</button></td>
+      <td class="retroflex"><button>ɖ</button></td>
+      <td class="palatal"><button>c</button></td>
+      <td class="palatal"><button>ADD HERE</button></td>
+      <td class="velar"><button>k</button></td>
+      <td class="velar"><button>g</button></td>
+      <td class="uvular"><button>q</button></td>
+      <td class="uvular"><button>G</button></td>
+      <td class="pharyngeal"><button>NA</button></button></td>
+      <td class="pharyngeal"><button class="impossible"></button></td>
+      <td class="glottal"><button>ADD HERE</button></button></td>
+      <td class="glottal"><button class="impossible"></button></td>
+    </tr>
+    <tr class="nasal">
+      <th>Plosive</th>
+      <td class="bilabial"><button>NA</button> <button>NA</button></td>
+      <td class="labiodental"><button>NA</button> <button>m</button></td>
+      <td class="dental"><button>NA</button> <button>ADD HERE</button></td>
+      <td class="alveolar"><button>NA</button> <button>n</button></td>
+      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
+      <td class="retroflex"><button>NA</button> <button>ADD HERE</button></td>
+      <td class="palatal"><button>NA</button> <button>ADD HERE</button></td>
+      <td class="velar"><button>NA</button> <button>ADD HERE</button></td>
+      <td class="uvular"><button>NA</button> <button>N</button></td>
+      <td class="pharyngeal"><button class="impossible"></button> <button class="impossible"></button></td>
+      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
+    </tr>
+    <tr class="trill">
+      <th>Trill</th>
+      <td class="bilabial"><button>NA</button> <button>B</button></td>
+      <td class="labiodental"><button>NA</button> <button>NA</button></td>
+      <td class="dental"><button>NA</button> <button>NA</button></td>
+      <td class="alveolar"><button>NA</button> <button>r</button></td>
+      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
+      <td class="retroflex"><button>NA</button> <button>NA</button></td>
+      <td class="palatal"><button>NA</button> <button>NA</button></td>
+      <td class="velar"><button class="impossible"></button> <button class="impossible"></button></td>
+      <td class="uvular"><button>NA</button> <button>R</button></td>
+      <td class="pharyngeal"><button>NA</button> <button>NA</button></td>
+      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
+    </tr>
+    <tr class="tap-or-flap">
+      <th>Tap or Flap</th>
+      <td class="bilabial"><button>NA</button> <button>NA</button></td>
+      <td class="labiodental"><button>NA</button> <button>NA</button></td>
+      <td class="dental"><button>NA</button> <button>NA</button></td>
+      <td class="alveolar"><button>NA</button> <button>ADD HERE</button></td>
+      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
+      <td class="retroflex"><button>NA</button> <button>ADD HERE</button></td>
+      <td class="palatal"><button>NA</button> <button>NA</button></td>
+      <td class="velar"><button class="impossible"></button> <button class="impossible"></button></td>
+      <td class="uvular"><button>NA</button> <button>NA</button></td>
+      <td class="pharyngeal"><button>NA</button> <button>NA</button></td>
+      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
+    </tr>
+    <tr class="fricative">
+      <th>Fricative</th>
+      <td class="bilabial"><button>ɸ</button> <button>β</button></td>
+      <td class="labiodental"><button>f</button> <button>v</button></td>
+      <td class="dental"><button>θ</button> <button>ð</button></td>
+      <td class="alveolar"><button>s</button> <button>z</button></td>
+      <td class="postalveolar"><button>ʃ</button> <button>ʒ</button></td>
+      <td class="retroflex"><button>ʂ</button> <button>ʐ</button></td>
+      <td class="palatal"><button>ç</button> <button>ʝ</button></td>
+      <td class="velar"><button>x</button> <button>ɣ</button></td>
+      <td class="uvular"><button>χ</button> <button>ʁ</button></td>
+      <td class="pharyngeal"><button>ħ</button> <button>ʕ</button></td>
+      <td class="glottal"><button>h</button> <button>ɦ</button></td>
+    </tr>
+    <tr class="lateral-fricative">
+      <th>Lateral Fricative</th>
+      <td class="bilabial"><button class="impossible"></button> <button class="impossible"></button></td>
+      <td class="labiodental"><button class="impossible"></button> <button class="impossible"></button></td>
+      <td class="dental"><button>NA</button> <button>NA</button></td>
+      <td class="alveolar"><button>ɬ</button> <button>ɮ</button></td>
+      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
+      <td class="retroflex"><button>NA</button> <button>NA</button></td>
+      <td class="palatal"><button>NA</button> <button>NA</button></td>
+      <td class="velar"><button>NA</button> <button>NA</button></td>
+      <td class="uvular"><button>NA</button> <button>NA</button></td>
+      <td class="pharyngeal"><button class="impossible"></button> <button class="impossible"></button></td>
+      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
+    </tr>
+    <tr class="approximant">
+      <th>Approximant</th>
+      <td class="bilabial"><button>NA</button> <button>NA</button></td>
+      <td class="labiodental"><button>NA</button> <button>ʋ</button></td>
+      <td class="dental"><button>NA</button> <button>NA</button></td>
+      <td class="alveolar"><button>NA</button> <button>ɹ</button></td>
+      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
+      <td class="retroflex"><button>NA</button> <button>ɻ</button></td>
+      <td class="palatal"><button>NA</button> <button>j</button></td>
+      <td class="velar"><button>NA</button> <button>ɰ</button></td>
+      <td class="uvular"><button>NA</button> <button>NA</button></td>
+      <td class="pharyngeal"><button>NA</button> <button>NA</button></td>
+      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
+    </tr>
+    <tr class="lateral-approximant">
+      <th>Lateral Approximant</th>
+      <td class="bilabial"><button class="impossible"></button> <button class="impossible"></button></td>
+      <td class="labiodental"><button class="impossible"></button> <button class="impossible"></button></td>
+      <td class="dental"><button>NA</button> <button>NA</button></td>
+      <td class="alveolar"><button>NA</button> <button>l</button></td>
+      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
+      <td class="retroflex"><button>NA</button> <button>ɭ</button></td>
+      <td class="palatal"><button>NA</button> <button>ʎ</button></td>
+      <td class="velar"><button>NA</button> <button>ʟ</button></td>
+      <td class="uvular"><button>NA</button> <button>NA</button></td>
+      <td class="pharyngeal"><button class="impossible"></button> <button class="impossible"></button></td>
+      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
+    </tr>
+  </table>
+</body>
+</html>
