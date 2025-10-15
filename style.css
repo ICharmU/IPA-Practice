@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  display: grid;
+  grid-template-rows: subgrid;
+}
+
+  p:not(.impossible):hover {
+    cursor: pointer;
+  }
+
+.chart-rows {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  /* border-style: solid; */
+}
+
+.chart-column-names, .plosive, .nasal, .trill, 
+.tap-or-flap, .fricative, .lateral-fricative, 
+.approximant, .lateral-approximant {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* border-style: solid; */
+}
+
+.bilabial, .labiodental, .dental, .alveolar, .postalveolar, .retroflex,
+.palatal, .velar, .uvular, .pharyngeal, .glottal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-style: solid;
+  border-color: blue; 
+}
+
+.shared {
+  background-color: orange;
+}
+
+
+/* .unvoiced:not(.impossible):hover {
+  background-color: green;
+}
+.voiced:not(.impossible):hover {
+  background-color: green;
+} */
+
+/* Not including fricative for shared sounds */
+.shared-row > .alveolar {
+  border-left: none;
+  border-right: none;
+}
+
+.shared-row > .dental {
+  border-right: none;
+}
+
+.shared-row > .postalveolar {
+  border-left: none;
+}
+
+.voiced, .unvoiced {
+  border-style: solid;
+  border-color: red;
+}
+
+.impossible {
+  background-color: black;
+}
+
+.dental > .shared.unvoiced {
+  border-right: none;
+}
+
+.dental > .shared.voiced,
+.alveolar > .shared.unvoiced,
+.alveolar > .shared.voiced,
+.postalveolar > .shared.unvoiced {
+  border-left: none;
+  border-right: none;
+}
+
+.dental > .shared.unvoiced {
+  border-right: none;
+}
+
+.postalveolar > .shared.voiced {
+  border-left: none;
+}
+
+

@@ -14,152 +14,401 @@ Change buttons to anchors that play the sound when clicked.
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IPA Practice</title>
-  <style>
-    .location {
-      colspan: 2
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   IPA Chart
-  <table>
-    <tr>
-      <th></th>
-      <th colspan="2">Bilabial</th>
-      <th colspan="2">Labiodental</th>
-      <th colspan="2">Dental</th>
-      <th colspan="2">Alveolar</th>
-      <th colspan="2">Post Alveolar</th>
-      <th colspan="2">Retroflex</th>
-      <th colspan="2">Palatal</th>
-      <th colspan="2">Velar</th>
-      <th colspan="2">Uvular</th>
-      <th colspan="2">Pharyngeal</th>
-      <th colspan="2">Glottal</th>
-    </tr>
-    <tr class="plosive">
-      <th>Plosive</th>
-      <td class="bilabial"><button>p</button></td>
-      <td class="bilabial"><button>d</button></td>
-      <td class="labiodental"><button>NA</button></td>
-      <td class="labiodental"><button>NA</button></td>
-      <td class="dental"><button>NA</button></td>
-      <td class="dental"><button>NA</button></td>
-      <td class="alveolar"><button>t</button></td>
-      <td class="alveolar"><button>t</button></td>
-      <td class="postalveolar"><button>NA</button></td>
-      <td class="postalveolar"><button>NA</button></td>
-      <td class="retroflex"><button>ʈ</button></td>
-      <td class="retroflex"><button>ɖ</button></td>
-      <td class="palatal"><button>c</button></td>
-      <td class="palatal"><button>ADD HERE</button></td>
-      <td class="velar"><button>k</button></td>
-      <td class="velar"><button>g</button></td>
-      <td class="uvular"><button>q</button></td>
-      <td class="uvular"><button>G</button></td>
-      <td class="pharyngeal"><button>NA</button></button></td>
-      <td class="pharyngeal"><button class="impossible"></button></td>
-      <td class="glottal"><button>ADD HERE</button></button></td>
-      <td class="glottal"><button class="impossible"></button></td>
-    </tr>
-    <tr class="nasal">
-      <th>Plosive</th>
-      <td class="bilabial"><button>NA</button> <button>NA</button></td>
-      <td class="labiodental"><button>NA</button> <button>m</button></td>
-      <td class="dental"><button>NA</button> <button>ADD HERE</button></td>
-      <td class="alveolar"><button>NA</button> <button>n</button></td>
-      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
-      <td class="retroflex"><button>NA</button> <button>ADD HERE</button></td>
-      <td class="palatal"><button>NA</button> <button>ADD HERE</button></td>
-      <td class="velar"><button>NA</button> <button>ADD HERE</button></td>
-      <td class="uvular"><button>NA</button> <button>N</button></td>
-      <td class="pharyngeal"><button class="impossible"></button> <button class="impossible"></button></td>
-      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
-    </tr>
-    <tr class="trill">
-      <th>Trill</th>
-      <td class="bilabial"><button>NA</button> <button>B</button></td>
-      <td class="labiodental"><button>NA</button> <button>NA</button></td>
-      <td class="dental"><button>NA</button> <button>NA</button></td>
-      <td class="alveolar"><button>NA</button> <button>r</button></td>
-      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
-      <td class="retroflex"><button>NA</button> <button>NA</button></td>
-      <td class="palatal"><button>NA</button> <button>NA</button></td>
-      <td class="velar"><button class="impossible"></button> <button class="impossible"></button></td>
-      <td class="uvular"><button>NA</button> <button>R</button></td>
-      <td class="pharyngeal"><button>NA</button> <button>NA</button></td>
-      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
-    </tr>
-    <tr class="tap-or-flap">
-      <th>Tap or Flap</th>
-      <td class="bilabial"><button>NA</button> <button>NA</button></td>
-      <td class="labiodental"><button>NA</button> <button>NA</button></td>
-      <td class="dental"><button>NA</button> <button>NA</button></td>
-      <td class="alveolar"><button>NA</button> <button>ADD HERE</button></td>
-      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
-      <td class="retroflex"><button>NA</button> <button>ADD HERE</button></td>
-      <td class="palatal"><button>NA</button> <button>NA</button></td>
-      <td class="velar"><button class="impossible"></button> <button class="impossible"></button></td>
-      <td class="uvular"><button>NA</button> <button>NA</button></td>
-      <td class="pharyngeal"><button>NA</button> <button>NA</button></td>
-      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
-    </tr>
-    <tr class="fricative">
-      <th>Fricative</th>
-      <td class="bilabial"><button>ɸ</button> <button>β</button></td>
-      <td class="labiodental"><button>f</button> <button>v</button></td>
-      <td class="dental"><button>θ</button> <button>ð</button></td>
-      <td class="alveolar"><button>s</button> <button>z</button></td>
-      <td class="postalveolar"><button>ʃ</button> <button>ʒ</button></td>
-      <td class="retroflex"><button>ʂ</button> <button>ʐ</button></td>
-      <td class="palatal"><button>ç</button> <button>ʝ</button></td>
-      <td class="velar"><button>x</button> <button>ɣ</button></td>
-      <td class="uvular"><button>χ</button> <button>ʁ</button></td>
-      <td class="pharyngeal"><button>ħ</button> <button>ʕ</button></td>
-      <td class="glottal"><button>h</button> <button>ɦ</button></td>
-    </tr>
-    <tr class="lateral-fricative">
-      <th>Lateral Fricative</th>
-      <td class="bilabial"><button class="impossible"></button> <button class="impossible"></button></td>
-      <td class="labiodental"><button class="impossible"></button> <button class="impossible"></button></td>
-      <td class="dental"><button>NA</button> <button>NA</button></td>
-      <td class="alveolar"><button>ɬ</button> <button>ɮ</button></td>
-      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
-      <td class="retroflex"><button>NA</button> <button>NA</button></td>
-      <td class="palatal"><button>NA</button> <button>NA</button></td>
-      <td class="velar"><button>NA</button> <button>NA</button></td>
-      <td class="uvular"><button>NA</button> <button>NA</button></td>
-      <td class="pharyngeal"><button class="impossible"></button> <button class="impossible"></button></td>
-      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
-    </tr>
-    <tr class="approximant">
-      <th>Approximant</th>
-      <td class="bilabial"><button>NA</button> <button>NA</button></td>
-      <td class="labiodental"><button>NA</button> <button>ʋ</button></td>
-      <td class="dental"><button>NA</button> <button>NA</button></td>
-      <td class="alveolar"><button>NA</button> <button>ɹ</button></td>
-      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
-      <td class="retroflex"><button>NA</button> <button>ɻ</button></td>
-      <td class="palatal"><button>NA</button> <button>j</button></td>
-      <td class="velar"><button>NA</button> <button>ɰ</button></td>
-      <td class="uvular"><button>NA</button> <button>NA</button></td>
-      <td class="pharyngeal"><button>NA</button> <button>NA</button></td>
-      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
-    </tr>
-    <tr class="lateral-approximant">
-      <th>Lateral Approximant</th>
-      <td class="bilabial"><button class="impossible"></button> <button class="impossible"></button></td>
-      <td class="labiodental"><button class="impossible"></button> <button class="impossible"></button></td>
-      <td class="dental"><button>NA</button> <button>NA</button></td>
-      <td class="alveolar"><button>NA</button> <button>l</button></td>
-      <td class="postalveolar"><button>NA</button> <button>NA</button></td>
-      <td class="retroflex"><button>NA</button> <button>ɭ</button></td>
-      <td class="palatal"><button>NA</button> <button>ʎ</button></td>
-      <td class="velar"><button>NA</button> <button>ʟ</button></td>
-      <td class="uvular"><button>NA</button> <button>NA</button></td>
-      <td class="pharyngeal"><button class="impossible"></button> <button class="impossible"></button></td>
-      <td class="glottal"><button class="impossible"></button> <button class="impossible"></button></td>
-    </tr>
-  </table>
+  <div class="chart-rows">
+    <div class="chart-column-names">
+      <h3></h3>
+      <h3>Bilabial</h3>
+      <h3>Labiodental</h3>
+      <h3>Dental</h3>
+      <h3>Alveolar</h3>
+      <h3>Post Alveolar</h3>
+      <h3>Retroflex</h3>
+      <h3>Palatal</h3>
+      <h3>Velar</h3>
+      <h3>Uvular</h3>
+      <h3>Pharyngeal</h3>
+      <h3>Glottal</h3>
+    </div>
+    <div class="plosive shared-row">
+      <h3>Plosive</h3>
+      <div class="bilabial">
+        <p class="unvoiced">p</p>
+        <p class="voiced">b</p>
+      </div>
+      <div class="labiodental">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="dental">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="alveolar">
+        <p class="unvoiced shared">t</p>
+        <p class="voiced shared">d</p>
+      </div>
+      <div class="postalveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="retroflex">
+        <p class="unvoiced">ʈ</p>
+        <p class="voiced">ɖ</p>
+      </div>
+      <div class="palatal">
+        <p class="unvoiced">c</p>
+        <p class="voiced">ɟ</p>
+      </div>
+      <div class="velar">
+        <p class="unvoiced">k</p>
+        <p class="voiced">g</p>
+      </div>
+      <div class="uvular">
+        <p class="unvoiced">q</p>
+        <p class="voiced">ɢ</p>
+      </div>
+      <div class="pharyngeal">
+        <p class="unvoiced unused"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="glottal">
+        <p class="unvoiced">ʔ</p>
+        <p class="voiced impossible"></p>
+      </div>
+    </div>
+    <div class="nasal shared-row">
+      <h3>Nasal</h3>
+      <div class="bilabial">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">m</p>
+      </div>
+      <div class="labiodental">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ɱ</p>
+      </div>
+      <div class="dental">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="alveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared">n</p>
+      </div>
+      <div class="postalveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="retroflex">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ɳ</p>
+      </div>
+      <div class="palatal">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ɲ</p>
+      </div>
+      <div class="velar">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ŋ</p>
+      </div>
+      <div class="uvular">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">N</p>
+      </div>
+      <div class="pharyngeal">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="glottal">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+    </div>
+    <div class="trill shared-row">
+      <h3>Trill</h3>
+      <div class="bilabial">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">B</p>
+      </div>
+      <div class="labiodental">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="dental">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="alveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared">r</p>
+      </div>
+      <div class="postalveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="retroflex">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="palatal">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="velar">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="uvular">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">R</p>
+      </div>
+      <div class="pharyngeal">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="glottal">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+    </div>
+    <div class="tap-or-flap shared-row">
+      <h3>Tap or Flap</h3>
+      <div class="bilabial">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="labiodental">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ⱱ</p>
+      </div>
+      <div class="dental">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="alveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared">ɾ</p>
+      </div>
+      <div class="postalveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="retroflex">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ɽ</p>
+      </div>
+      <div class="palatal">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="velar">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="uvular">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="pharyngeal">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="glottal">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+    </div>
+    <div class="fricative shared-row">
+      <h3>Fricative</h3>
+      <div class="bilabial">
+        <p class="unvoiced">ɸ</p>
+        <p class="voiced">β</p>
+      </div>
+      <div class="labiodental">
+        <p class="unvoiced">f</p>
+        <p class="voiced">v</p>
+      </div>
+      <div class="dental">
+        <p class="unvoiced">θ</p>
+        <p class="voiced">ð</p>
+      </div>
+      <div class="alveolar">
+        <p class="unvoiced">s</p>
+        <p class="voiced">z</p>
+      </div>
+      <div class="postalveolar">
+        <p class="unvoiced">ʃ</p>
+        <p class="voiced">ʒ</p>
+      </div>
+      <div class="retroflex">
+        <p class="unvoiced">ʂ</p>
+        <p class="voiced">ʐ</p>
+      </div>
+      <div class="palatal">
+        <p class="unvoiced">ç</p>
+        <p class="voiced">ʝ</p>
+      </div>
+      <div class="velar">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ŋ</p>
+      </div>
+      <div class="uvular">
+        <p class="unvoiced">x</p>
+        <p class="voiced">ɣ</p>
+      </div>
+      <div class="pharyngeal">
+        <p class="unvoiced">ħ</p>
+        <p class="voiced">ʕ</p>
+      </div>
+      <div class="glottal">
+        <p class="unvoiced">h</p>
+        <p class="voiced">ɦ</p>
+      </div>
+    </div>
+    <div class="lateral-fricative shared-row">
+      <h3>Lateral Fricative</h3>
+      <div class="bilabial">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="labiodental">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="dental">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="alveolar">
+        <p class="unvoiced shared">ɬ</p>
+        <p class="voiced shared">ɮ</p>
+      </div>
+      <div class="postalveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="retroflex">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="palatal">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="velar">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="uvular">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="pharyngeal">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="glottal">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+    </div>
+    <div class="approximant shared-row">
+      <h3>Approximant</h3>
+      <div class="bilabial">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="labiodental">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ʋ</p>
+      </div>
+      <div class="dental">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="alveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared">ɹ</p>
+      </div>
+      <div class="postalveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="retroflex">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ɻ</p>
+      </div>
+      <div class="palatal">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">j</p>
+      </div>
+      <div class="velar">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ɰ</p>
+      </div>
+      <div class="uvular">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="pharyngeal">
+        <p class="unvoiced"></p>
+        <p class="voiced"></p>
+      </div>
+      <div class="glottal">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+    </div>
+    <div class="lateral-approximant shared-row">
+      <h3>Lateral Approximant</h3>
+      <div class="bilabial">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="labiodental">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="dental">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="alveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared">l</p>
+      </div>
+      <div class="postalveolar">
+        <p class="unvoiced shared"></p>
+        <p class="voiced shared"></p>
+      </div>
+      <div class="retroflex">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ɭ</p>
+      </div>
+      <div class="palatal">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ʎ</p>
+      </div>
+      <div class="velar">
+        <p class="unvoiced unused"></p>
+        <p class="voiced">ʟ</p>
+      </div>
+      <div class="uvular">
+        <p class="unvoiced unused"></p>
+        <p class="voiced unused"></p>
+      </div>
+      <div class="pharyngeal">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+      <div class="glottal">
+        <p class="unvoiced impossible"></p>
+        <p class="voiced impossible"></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
