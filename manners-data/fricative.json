@@ -1,0 +1,112 @@
+{
+    "bilabial": {
+        "unvoiced": {
+            "symbol": "ɸ",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "β",
+            "tags": []
+        }
+    }, 
+    "labiodental": {
+        "unvoiced": {
+            "symbol": "f",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "v",
+            "tags": []
+        } 
+    },
+    "dental": {
+        "unvoiced": {
+            "symbol": "θ",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "ð",
+            "tags": []
+        }
+    },
+    "alveolar": {
+        "unvoiced": {
+            "symbol": "s",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "z",
+            "tags": []
+        }
+    }, 
+    "postalveolar": {
+        "unvoiced": {
+            "symbol": "ʃ",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "ʒ",
+            "tags": []
+        }
+    },
+    "retroflex": {
+        "unvoiced": {
+            "symbol": "ʂ",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "ʐ",
+            "tags": []
+        }
+    },  
+    "palatal": {
+        "unvoiced": {
+            "symbol": "ç",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "ʝ",
+            "tags": []
+        }
+    }, 
+    "velar": {
+        "unvoiced": {
+            "symbol": "x",
+            "tags": ["unused"]
+        },
+        "voiced": {
+            "symbol": "ɣ",
+            "tags": []
+        }
+    },
+    "uvular": {
+        "unvoiced": {
+            "symbol": "χ",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "ʁ",
+            "tags": []
+        }
+    },
+    "pharyngeal": {
+        "unvoiced": {
+            "symbol": "ħ",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "ʕ",
+            "tags": []
+        }
+    },
+    "glottal": {
+        "unvoiced": {
+            "symbol": "h",
+            "tags": []
+        },
+        "voiced": {
+            "symbol": "ɦ",
+            "tags": []
+        }
+    }
+}

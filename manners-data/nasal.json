@@ -1,0 +1,112 @@
+{
+    "bilabial": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["unused"]
+        },
+        "voiced": {
+            "symbol": "m",
+            "tags": []
+        }
+    }, 
+    "labiodental": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["unused"]
+        },
+        "voiced": {
+            "symbol": "ɱ",
+            "tags": [""]
+        } 
+    },
+    "dental": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["unused", "shared"]
+        },
+        "voiced": {
+            "symbol": "n",
+            "tags": ["shared"]
+        }
+    },
+    "alveolar": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["unused", "shared"]
+        },
+        "voiced": {
+            "symbol": "n",
+            "tags": ["shared"]
+        }
+    }, 
+    "postalveolar": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["unused", "shared"]
+        },
+        "voiced": {
+            "symbol": "n",
+            "tags": ["shared"]
+        }
+    },
+    "retroflex": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["unused"]
+        },
+        "voiced": {
+            "symbol": "ɳ",
+            "tags": []
+        }
+    },  
+    "palatal": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["unused"]
+        },
+        "voiced": {
+            "symbol": "ɲ",
+            "tags": []
+        }
+    }, 
+    "velar": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["unused"]
+        },
+        "voiced": {
+            "symbol": "ŋ",
+            "tags": []
+        }
+    },
+    "uvular": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["unused"]
+        },
+        "voiced": {
+            "symbol": "N",
+            "tags": []
+        }
+    },
+    "pharyngeal": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["impossible"]
+        },
+        "voiced": {
+            "symbol": "",
+            "tags": ["impossible"]
+        }
+    },
+    "glottal": {
+        "unvoiced": {
+            "symbol": "",
+            "tags": ["impossible"]
+        },
+        "voiced": {
+            "symbol": "",
+            "tags": ["impossible"]
+        }
+    }
+}
